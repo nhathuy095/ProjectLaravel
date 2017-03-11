@@ -1,137 +1,138 @@
 <?php
-Route::get('/bangdieukhien', function (){
+
+Route::get('/bang-dieu-khien', function (){
     return view('index')
         ->with('page', 1);
 });
-Route::get('/bieudo', function (){
+Route::get('/bieu-do', function (){
     return view('index')
         ->with('page', 2);
 });
-Route::get('/donhang', function (){
+Route::get('/don-hang', function (){
     return view('index')
         ->with('page', 3);
 });
-Route::get('/giaodich', function (){
+Route::get('/giao-dich', function (){
     return view('index')
         ->with('page', 4);
 });
 
-Route::get('/sanpham', function (){
+Route::get('/san-pham', function (){
     return view('index')
         ->with('page', 5);
 });
-Route::get('/sanpham/them', function (){
+Route::get('/san-pham/them', function (){
     return view('index')
         ->with('page', 6);
 });
-Route::get('/sanpham/chinhsua', function (){
+Route::get('/san-pham/chinh-sua', function (){
     return view('index')
         ->with('page', 7);
 });
-Route::get('/sanpham/chitiet', function (){
+Route::get('/san-pham/chi-tiet', function (){
     return view('index')
         ->with('page', 8);
 });
 
-Route::get('/danhmuc', function (){
+Route::get('/danh-muc', function (){
     return view('index')
         ->with('page', 9);
 });
-Route::get('/danhmuc/them', function (){
+Route::get('/danh-muc/them', function (){
     return view('index')
         ->with('page', 10);
 });
-Route::get('/danhmuc/chinhsua', function (){
+Route::get('/danh-muc/chinh-sua', function (){
     return view('index')
         ->with('page', 11);
 });
-Route::get('/danhmuc/chitiet', function (){
+Route::get('/danh-muc/chi-tiet', function (){
     return view('index')
         ->with('page', 12);
 });
 
-Route::get('/banquantri', function (){
+Route::get('/ban-quan-tri', function (){
     return view('index')
         ->with('page', 13);
 });
-Route::get('/banquantri/them', function (){
+Route::get('/ban-quan-tri/them', function (){
     return view('index')
         ->with('page', 14);
 });
-Route::get('/banquantri/chinhsua', function (){
+Route::get('/ban-quan-tri/chinh-sua', function (){
     return view('index')
         ->with('page', 15);
 });
-Route::get('/banquantri/chitiet', function (){
+Route::get('/ban-quan-tri/chi-tiet', function (){
     return view('index')
         ->with('page', 16);
 });
 
-Route::get('/thanhvien', function (){
+Route::get('/thanh-vien', function (){
     return view('index')
         ->with('page', 17);
 });
-Route::get('/thanhvien/them', function (){
+Route::get('/thanh-vien/them', function (){
     return view('index')
         ->with('page', 18);
 });
-Route::get('/thanhvien/chinhsua', function (){
+Route::get('/thanh-vien/chinh-sua', function (){
     return view('index')
         ->with('page', 19);
 });
-Route::get('/thanhvien/chitiet', function (){
+Route::get('/thanh-vien/chi-tiet', function (){
     return view('index')
         ->with('page', 20);
 });
 
 
-Route::get('/banquantri', function (){
+Route::get('/ban-quan-tri', function (){
     return view('index')
         ->with('page', 21);
 });
-Route::get('/banquantri/them', function (){
+Route::get('/ban-quan-tri/them', function (){
     return view('index')
         ->with('page', 22);
 });
-Route::get('/banquantri/chinhsua', function (){
+Route::get('/ban-quan-tri/chinh-sua', function (){
     return view('index')
         ->with('page', 23);
 });
-Route::get('/banquantri/chitiet', function (){
+Route::get('/ban-quan-tri/chi-tiet', function (){
     return view('index')
         ->with('page', 24);
 });
 
-Route::get('/thanhvien', function (){
+Route::get('/thanh-vien', function (){
     return view('index')
         ->with('page', 25);
 });
-Route::get('/thanhvien/them', function (){
+Route::get('/thanh-vien/them', function (){
     return view('index')
         ->with('page', 26);
 });
-Route::get('/thanhvien/chinhsua', function (){
+Route::get('/thanh-vien/chinh-sua', function (){
     return view('index')
         ->with('page', 27);
 });
-Route::get('/thanhvien/chitiet', function (){
+Route::get('/thanh-vien/chi-tiet', function (){
     return view('index')
         ->with('page', 28);
 });
 //
-Route::get('/hotro', function (){
+Route::get('/ho-tro', function (){
     return view('index')
         ->with('page', 29);
 });
-Route::get('/hotro/them', function (){
+Route::get('/ho-tro/them', function (){
     return view('index')
         ->with('page', 30);
 });
-Route::get('/hotro/chinhsua', function (){
+Route::get('/ho-tro/chinh-sua', function (){
     return view('index')
         ->with('page', 31);
 });
-Route::get('/hotro/chitiet', function (){
+Route::get('/hotro/chi-tiet', function (){
     return view('index')
         ->with('page', 32);
 });
@@ -140,25 +141,25 @@ Route::get('/lienhe', function (){
     return view('index')
         ->with('page', 33);
 });
-Route::get('/chitiet/chitiet', function (){
+Route::get('/chi-tiet/chi-tiet', function (){
     return view('index')
         ->with('page', 34);
 });
 
 //
-Route::get('/tintuc', function (){
+Route::get('/tin-tuc', function (){
     return view('index')
         ->with('page', 35);
 });
-Route::get('/tintuc/them', function (){
+Route::get('/tin-tuc/them', function (){
     return view('index')
         ->with('page', 36);
 });
-Route::get('/tintuc/chinhsua', function (){
+Route::get('/tin-tuc/chinh-sua', function (){
     return view('index')
         ->with('page', 37);
 });
-Route::get('/tintuc/chitiet', function (){
+Route::get('/tin-tuc/chi-tiet', function (){
     return view('index')
         ->with('page', 38);
 });
@@ -171,11 +172,11 @@ Route::get('/trang/them', function (){
     return view('index')
         ->with('page', 40);
 });
-Route::get('/trang/chinhsua', function (){
+Route::get('/trang/chinh-sua', function (){
     return view('index')
         ->with('page', 41);
 });
-Route::get('/trang/chitiet', function (){
+Route::get('/trang/chi-tiet', function (){
     return view('index')
         ->with('page', 42);
 });
