@@ -1,0 +1,686 @@
+= Document layout v1
+
+== All library plugin
+
+* Bootstrap
+http://getbootstrap.com/components/[http://getbootstrap.com/components/]
+
+* Bootstrap date picker
+https://bootstrap-datepicker.readthedocs.io/en/latest/[https://bootstrap-datepicker.readthedocs.io/en/latest/]
+
+* Bootstrap select picker
+https://silviomoreto.github.io/bootstrap-select/examples/[https://silviomoreto.github.io/bootstrap-select/examples/]
+
+* Bootstrap color picker
+https://itsjavi.com/bootstrap-colorpicker/[https://itsjavi.com/bootstrap-colorpicker/]
+
+* Bootstrap tag input
+https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/[https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/]
+
+* Chart plotly
+https://plot.ly/javascript/[https://plot.ly/javascript/]
+
+* Jquery bootstap scrolling tabs
+https://github.com/mikejacobson/jquery-bootstrap-scrolling-tabs[https://github.com/mikejacobson/jquery-bootstrap-scrolling-tabs]
+
+== Useful class
+[source, css]
+----
+.full-w <1>
+.underline <2>
+.bold <3>
+.full-w-i <4>
+.d-none <5>
+.main-title-color <6>
+.second-title-color <7>
+----
+
+== Code example
+
+=== Header admin
+[source,html]
+----
+<div class="header-sidebar-container">
+    <!-- header container -->
+    <div class="h-s-c-header">
+        <div class="h-s-c-h-left">
+            <div class="min-menu-icon">
+                <i class="fa fa-bars c-icon" aria-hidden="true"></i>
+            </div>
+            <div class="logo-c">
+                <img src="../../assets/images/logo.png">
+            </div>
+        </div>
+
+        <div class="h-s-c-h-right">
+            <div class="admin-title-c">
+                Hệ thống học trực tuyến ABC
+            </div>
+
+            <div class="header-right-c">
+                <!-- /.dropdown -->
+                <ul>
+                    <li class="dropdown header-userinfo">
+                        <a class="dropdown-toggle user-info" data-toggle="dropdown" href="#">
+                            <img src="../../assets/images/user.jpg" class="img-avatar">
+                            <span class="user-name">Mai Huu Danh</span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- side bar -->
+    <div class="sidebar-container">
+        <ul class="nav menu-item-sidebar" id="side-menu">
+                <li class="selected active">
+                    <a href="#"><i class="fa fa-graduation-cap k-icon" aria-hidden="true"></i> Khóa học</a>
+                    <ul class="nav second-level collapse in">
+                        <li>
+                            <a href="#" class="selected">Danh sách khóa học hiện tại</a>
+                        </li>
+                        <li>
+                            <a href="#">Danh sách khóa học hiện tại</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-user k-icon" aria-hidden="true"></i> Người dùng</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-users k-icon" aria-hidden="true"></i> Nhóm người dùng</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart k-icon" aria-hidden="true"></i> Thống kê</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-cog k-icon" aria-hidden="true"></i> Cấu hình</a>
+                </li>
+            </ul>
+        <!-- /#side-menu -->
+    </div>
+
+</div>
+----
+
+=== Header admin
+[source, html]
+----
+<div class="admin-header-only-logo-com">
+    <img src="../../assets/images/kynabizlogo.png"/>
+</div>
+----
+
+=== Header font end
+[source, html]
+----
+<div class="header-f-container">
+    <!-- header container -->
+    <div class="h-s-c-header">
+        <div class="logo-c">
+            <img src="../../assets/images/kyna-logo.png">
+        </div>
+
+        <div class="header-right-c">
+            <!-- /.dropdown -->
+            <ul>
+                <li class="dropdown header-userinfo">
+                    <a class="dropdown-toggle user-info" data-toggle="dropdown" href="#">
+                        <img src="../../assets/images/user.jpg" class="img-avatar">
+                        <span class="user-name">Mai Huu Danh</span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+----
+
+=== Star
+[source, html]
+----
+<span class="start-container view-mode"> <1>
+    <a href="" class="start" title="quá ngon"><i class="fa fa-star" aria-hidden="true"></i></a>
+    <a href="" class="start" title="ngon"><i class="fa fa-star" aria-hidden="true"></i></a>
+    <a href="" class="start selected" title="cũng được"><i class="fa fa-star" aria-hidden="true"></i></a>
+    <a href="" class="start" title="kì quá"><i class="fa fa-star" aria-hidden="true"></i></a>
+    <a href="" class="one-start start" title="tệ"><i class="fa fa-star" aria-hidden="true"></i></a>
+</span>
+----
+<1> *view-mode* is only view, remove *view-mode* user and hover on star
+
+=== Form admin
+
+[source, html]
+----
+<div class="admin-frm-com">
+    <form>
+        <div class="afcom-item-w">
+            <div class="my-input-icon-l">
+                <input type="" class="my-input" placeholder="Tìm câu hỏi">
+                <i class="fa fa-search c-icon" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="afcom-item-w">
+            <div class="my-input-icon-l">
+                <input type="" class="my-input" placeholder="Tìm câu hỏi">
+                <i class="fa fa-search c-icon" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="afcom-item-w">
+            <button>Đăng nhập</button>
+        </div>
+        <div class="afcom-item-w">
+            <a href="">Quên mât khẩu</a>
+        </div>
+    </form>
+</div>
+----
+
+
+=== Input
+[source, html]
+----
+<input type="text" class="my-input" placeholder="Tìm theo tên, email..."> <1>
+<input value="" type='text' class="my-input input-hightlight" placeholder="Cao Lém Lỉnh"/> <2>
+<div class="my-input-icon-r"> <3>
+    <input type="" class="my-input" placeholder="Tìm câu hỏi">
+    <i class="fa fa-search c-icon" aria-hidden="true"></i>
+</div>
+<div class="my-input-icon-l"> <4>
+    <input type="" class="my-input" placeholder="Tìm câu hỏi">
+    <i class="fa fa-search c-icon" aria-hidden="true"></i>
+</div>
+----
+
+=== Tag input
+[source, html]
+----
+<div class="my-taginput-w">
+    <input type="text" class="my-input full-w" value="Create user, Create user" data-role="tagsinput" />
+</div>
+----
+
+=== Textarea
+[source, html]
+----
+<textarea class="my-ta-input"></textarea>
+----
+
+=== Check box
+[source, html]
+----
+<div class="checkbox checkbox-success">
+   <input type="checkbox" name="chkName" id="chkId">
+    <label for="chkId"></label>
+</div>
+----
+
+[IMPORTANT]
+Check box we can have more classes like *radio-primary*, *radio-danger*, *radio-info*, *radio-warning*, *radio-success*
+
+=== Radio box
+[source, html]
+----
+<div class="radio radio-success">
+    <input type="radio" name="questionName1" value="yes">
+    <label class="">Yes</label>
+</div>
+----
+
+[IMPORTANT]
+Radio box we can have more classes like *radio-primary*, *radio-danger*, *radio-info*, *radio-warning*, *radio-success*
+
+=== Table
+[source, html]
+----
+<table class="my-table" border="1">
+	<thead>
+	    <tr>
+	        <th>ID</th>
+	        <th>Ngày thành toán</th>
+	        <th>Số tiền</th>
+	        <th>Chi chú</th>
+	        <th>Nhân viên</th>
+	    </tr>
+	</thead>
+	<tbody>
+	    <tr>
+	        <td class="w-100">123456</td>
+	        <td>12/11/2015 12:12:22</td>
+	        <td class="w-150">200.000.000 đ</td>
+	        <td class="w-200">Dóng đúng hạn</td>
+	        <td class="w-200">Nhân viên A</td>
+	    </tr>
+	</tbody>
+</table>
+<div class="tb-paging">
+    <div class="des">
+        Hiển thị trang <span class="active-page">1</span> trong <strong>20</strong>
+    </div>
+    <div class="list-page">
+        <div class="first"><a href="">Đầu</a></div>
+        <div class="back"><a href=""><i class="fa fa-angle-left" aria-hidden="true"></i></a></div>
+        <div class="list-page-d">
+            <a href="" class="selected">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">7</a>
+        </div>
+        <div class="next"><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+
+        <div class="last"><a href="">Cuối</a></div>
+    </div>
+</div>
+----
+
+=== Table with rating
+[source, html]
+----
+<td class="rating"> <1>
+    <div class="rating-detail">
+        <span>DESIGN</span>
+                    <span class="start-container view-mode">
+                        <a href="" class="start" title="quá ngon"><i class="fa fa-star"
+                                                                     aria-hidden="true"></i></a>
+                        <a href="" class="start" title="ngon"><i class="fa fa-star"
+                                                                 aria-hidden="true"></i></a>
+                        <a href="" class="start selected" title="cũng được"><i
+                                class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="" class="start" title="kì quá"><i class="fa fa-star"
+                                                                   aria-hidden="true"></i></a>
+                        <a href="" class="one-start start" title="tệ"><i class="fa fa-star"
+                                                                         aria-hidden="true"></i></a>
+                    </span>
+    </div>
+    <div class="rating-title">
+        150 GIỜ THÀNH THẠO PHOTOSHOP
+    </div>
+    <div>Cơ bản</div>
+</td>
+----
+<1> Add this class *rating* in td column to show rating template
+
+
+=== Date picker
+[source, html]
+----
+<input type="text" data-provide="datepicker" data-date-format="dd/mm/yyyy" placeholder="Tìm theo ngày..." class="my-input">
+----
+<1> More api see link reference
+
+=== Select picker
+[source, html]
+----
+<select class="selectpicker my-select-picker">
+    <option>Tìm theo user role</option>
+    <option>Ketchup</option>
+    <option>Relish</option>
+</select>
+----
+<1> More api see link reference
+
+=== Button
+[source, html]
+----
+<button class="my-button">Tìm</button> <1>
+<button class="my-s-button select-s-button">Người dùng</button><2>
+<button class="my-s-button">Khóa học</button><3>
+<button class="my-u-button">Các khóa học</button><4>
+<div class="budc-add-course-w"><5>
+    <button class="my-button m-r-10">Thêm khóa mới
+        <span class="graduation-plus">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            <i class="fa fa-graduation-cap k-icon" aria-hidden="true"></i>
+        </span>
+    </button>
+</div>
+----
+
+=== Buttop group
+[source, html]
+----
+<div class="my-button-g m-r-10">
+    <button>Tìm</button>
+    <input type="text" placeholder="marketing">
+    <i class="fa fa-repeat icon" aria-hidden="true"></i>
+</div>
+----
+
+=== Button group with dropdown menu
+[source, html]
+----
+<div class="my-button-g-drop-down m-r-10">
+	<button class="dropdown open">
+	    <a href="" class="dropdown-toggle multi-level wblink" data-toggle="dropdown" aria-expanded="true">Lọc khóa học <span class="caret"></span></a>
+	    <ul class="dropdown-menu dropdown-menu-with-arrow" role="menu">
+	        <!-- build menu for home page -->
+	        <li>
+	            <a href="" class="selected">A-Z</a>
+	        </li>
+
+	        <li class="dropdown-submenu">
+	            <a href="" class="selected">Danh mục</a>
+	            <ul class="dropdown-menu" role="menu">
+	                <li><a href="">Danh mục con asdfjkasf asjas fkasj</a></li>
+	                <li><a href="">Danh mục con</a></li>
+	                <li><a href="">Danh mục con</a></li>
+	            </ul>
+	        </li>
+
+	        <li class="dropdown-submenu">
+	            <a href="" class="selected">Theo đánh giá cao au dajio</a>
+	            <ul class="dropdown-menu" role="menu">
+	                <li><a href="">Danh mục con</a></li>
+	                <li><a href="">Danh mục con</a></li>
+	                <li><a href="">Danh mục con</a></li>
+	            </ul>
+	        </li>
+
+	        <li class="dropdown-submenu">
+	            <a href="" class="selected">Tỷ lệ hoàn thành</a>
+	            <ul class="dropdown-menu" role="menu">
+	                <li><a href="">Danh mục con</a></li>
+	                <li><a href="">Danh mục con</a></li>
+	                <li><a href="">Danh mục con</a></li>
+	            </ul>
+	        </li>
+
+	    </ul>
+	</button>
+	<input type="text" placeholder="505154">
+	<i class="fa fa-repeat icon" aria-hidden="true"></i>
+	</div>
+----
+
+=== Big tabs
+[source, html]
+----
+<ul class="my nav nav-tabs big-tab" role="tablist">
+    <li role="presentation">
+        <a href="#khoahoc" aria-controls="home" role="tab" data-toggle="tab">Khóa học</a></li>
+    <li role="presentation"><a href="#tailieu" aria-controls="profile" role="tab" data-toggle="tab">Tài liệu</a></li>
+    <li role="presentation" class="active"><a href="#hoigiangvien" aria-controls="profile" role="tab" data-toggle="tab">Hỏi giảng viên</a></li>
+</ul>
+<div class="tab-content parent">
+    <div role="tabpanel" class="tab-pane" id="khoahoc">
+        khoa hoc
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tailieu">
+        tai lieu
+    </div>
+
+    <div role="tabpanel" class="tab-pane active" id="hoigiangvien">
+        hoi gv
+    </div>
+
+</div>
+----
+
+=== Normal tabs
+[source, html]
+----
+<ul class="my nav nav-tabs" role="tablist">
+    <li role="presentation" class="active tab-account-your-question">
+        <a href="#cauhoicuarban" aria-controls="home" role="tab" data-toggle="tab">Câu hỏi của bạn (10)</a></li>
+    <li role="presentation" class="tab-account-take-caring"><a href="#dangquantam" aria-controls="profile" role="tab" data-toggle="tab">Đang quan tâm (20)</a></li>
+</ul>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="cauhoicuarban">
+	cau hoi cua ban
+</div>
+<div role="tabpanel" class="tab-pane" id="dangquantam">
+    dang quan tam
+</div>
+</div>
+----
+
+=== Tree view
+[source, html]
+----
+<div class="tree-view-com">
+    <ul class="tree-view-parent-child-ul">
+        <li>
+            <a href=""><i class="fa fa-list-ul c-icon c-icon-list" aria-hidden="true"></i> Khóa học phương pháp giáo dục sớm</a>
+            <ul>
+                <li>
+                    <a href="" class="document-title">
+                        <img src="../../assets/images/icon/docfile.png" class="c-icon">
+                        Khóa học phương pháp giáo dục sớm
+                    </a>
+
+                    <div class="download-doc">
+                        <a href="" class="a-btn-no-bg"><img src="../../assets/images/icon/viewonline.png" class="c-icon">Xem online</a>
+                        <a href="" class="a-btn-no-bg"><img src="../../assets/images/icon/download.png" class="c-icon"> Download</a>
+                        <a href="" class="download-doc-min-icon">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="document-title">
+                        <img src="../../assets/images/icon/docfile.png" class="c-icon">
+                        Khóa học phương pháp giáo dục sớm
+                    </a>
+
+                    <div class="download-doc">
+                        <a href="" class="a-btn-no-bg"><img src="../../assets/images/icon/viewonline.png" class="c-icon">Xem online</a>
+                        <a href="" class="a-btn-no-bg"><img src="../../assets/images/icon/download.png" class="c-icon"> Download</a>
+                        <a href="" class="download-doc-min-icon">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="document-title">
+                        <img src="../../assets/images/icon/docfile.png" class="c-icon">
+                        Khóa học phương pháp giáo dục sớm
+                    </a>
+
+                    <div class="download-doc">
+                        <a href="" class="a-btn-no-bg"><img src="../../assets/images/icon/viewonline.png" class="c-icon">Xem online</a>
+                        <a href="" class="a-btn-no-bg"><img src="../../assets/images/icon/download.png" class="c-icon"> Download</a>
+                        <a href="" class="download-doc-min-icon">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+        </li>
+        <li class="line"></li>
+        <li>
+            <a href=""><i class="fa fa-list-ul c-icon c-icon-list" aria-hidden="true"></i> Khóa học phương pháp giáo dục sớm</a>
+            <ul>
+                <li>
+                    <a href="" class="document-title">
+                        <img src="../../assets/images/icon/docfile.png" class="c-icon">
+                        Khóa học phương pháp giáo dục sớm
+                    </a>
+
+                    <div class="download-doc">
+                        <a href="" class="a-btn-no-bg"><img src="../../assets/images/icon/download.png" class="c-icon"> Download</a>
+                        <a href="" class="download-doc-min-icon">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="document-title">
+                        <img src="../../assets/images/icon/docfile.png" class="c-icon">
+                        Khóa học phương pháp giáo dục sớm
+                    </a>
+
+                    <div class="download-doc">
+                        <a href="" class="a-btn-no-bg"><img src="../../assets/images/icon/download.png" class="c-icon"> Download</a>
+                        <a href="" class="download-doc-min-icon">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="document-title">
+                        <img src="../../assets/images/icon/docfile.png" class="c-icon">
+                        Khóa học phương pháp giáo dục sớm
+                    </a>
+
+                    <div class="download-doc">
+                        <a href="" class="a-btn-no-bg"><img src="../../assets/images/icon/viewonline.png" class="c-icon">Xem online</a>
+                        <a href="" class="a-btn-no-bg"><img src="../../assets/images/icon/download.png" class="c-icon"> Download</a>
+                        <a href="" class="download-doc-min-icon">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+
+
+            </ul>
+        </li>
+    </ul>
+</div>
+----
+
+=== Collapse and expand
+[source, html]
+----
+<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+    <div class=" alert-success" role="alert" style="border-radius: 0; padding: 15px; border: 1px solid #e3e3e3">
+        <a href="#">
+            <i style="color: #f77857" class="fa fa-play-circle-o" aria-hidden="true"></i>
+            <span>Bài 1: Tại sao phải từ chối bạo lực</span>
+        </a>
+    </div>
+    <div role="alert" style="border-radius: 0; padding: 15px; border: 1px solid #e3e3e3">
+        <a>
+            <i style="color: #b3b3b3" class="fa fa-file-text" aria-hidden="true"></i>
+            <span>Bài 1: Tại sao phải từ chối bạo lực</span>
+        </a>
+    </div>
+    <div role="alert" style="border-radius: 0; padding: 15px; border: 1px solid #e3e3e3">
+        <a href="#">
+            <i style="color: #f77857" class="fa fa-play-circle-o" aria-hidden="true"></i>
+            <span>Bài 1: Tại sao phải từ chối bạo lực</span>
+        </a>
+    </div>
+    <div role="alert" style="border-radius: 0; padding: 15px; border: 1px solid #e3e3e3">
+        <a>
+            <i style="color: #b3b3b3" class="fa fa-file-text" aria-hidden="true"></i>
+            <span>Bài 1: Tại sao phải từ chối bạo lực</span>
+        </a>
+    </div>
+</div>
+----
+
+=== Thong ke thanh vien com
+[source, html]
+----
+<div class="thanhvien-group-thongke-com">
+    <div class="tvgtcom-title">Thành viên tích cực</div>
+    <div class="tvgtcom-content">
+        <div class="tvgtcom-row-item">
+            <div class="tvgtcom-col-item me-align-center">
+                <img src="../../assets/images/user1-128x128.jpg" alt="" class="tvgtcom-col-item-avatar">
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="tvgtcom-col-item-name">Cáo Cáu Kỉnh</div>
+                <div>Email: caocaukinh@kynabiz.com</div>
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="third-title-color">88%</div>
+                <div>khóa học hoàn thành</div>
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="third-title-color">16.5</div>
+                <div>lần đăng nhập trong tuần</div>
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="main-title-color">8</div>
+                <div>Giờ học trong một ngày</div>
+            </div>
+            <div class="tvgtcom-col-item me-align-center">
+                <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+        <div class="tvgtcom-row-item">
+            <div class="tvgtcom-col-item">
+                <img src="../../assets/images/user1-128x128.jpg" alt="" class="tvgtcom-col-item-avatar">
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="tvgtcom-col-item-name">Cáo Cáu Kỉnh</div>
+                <div>Email: caocaukinh@kynabiz.com</div>
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="third-title-color">88%</div>
+                <div>khóa học hoàn thành</div>
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="main-title-color">16.5</div>
+                <div>lần đăng nhập trong tuần</div>
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="main-title-color">8</div>
+                <div>Giờ học trong một ngày</div>
+            </div>
+            <div class="tvgtcom-col-item me-align-center">
+                <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="tvgtcom-row-item">
+            <div class="tvgtcom-col-item me-align-center">
+                <img src="../../assets/images/user1-128x128.jpg" alt="" class="tvgtcom-col-item-avatar">
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="tvgtcom-col-item-name">Cáo Cáu Kỉnh</div>
+                <div>Email: caocaukinh@kynabiz.com</div>
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="third-title-color">88%</div>
+                <div>khóa học hoàn thành</div>
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="main-title-color">16.5</div>
+                <div>lần đăng nhập trong tuần</div>
+            </div>
+            <div class="tvgtcom-col-item">
+                <div class="third-title-color">8</div>
+                <div>Giờ học trong một ngày</div>
+            </div>
+            <div class="tvgtcom-col-item me-align-center">
+                <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+----
