@@ -9,6 +9,12 @@
             @include("2_DonHang")
         @elseif($page == 4)
             @include("11_GiaoDich")
+        @elseif($page == 5)
+            @include("3_SanPham")
+        @elseif($page == 9)
+            @include("4_DanhMuc")
+        @elseif($page == 6)
+            @include("3_SanPhamThem")
         @endif
     @endif
 

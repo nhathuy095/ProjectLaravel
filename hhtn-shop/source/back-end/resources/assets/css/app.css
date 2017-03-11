@@ -1,0 +1,16 @@
+table.two-axis tr td:first-of-type {
+    background: #dff1f7;
+}
+
+@media only screen and (max-width: 568px) {
+    table.two-axis tr td:first-of-type,
+    table.two-axis tr:nth-of-type(2n+2) td:first-of-type,
+    table.two-axis tr td:first-of-type:before {
+        background: #dff1f7;
+        color: #ffffff;
+    }
+
+    table.two-axis tr td:first-of-type {
+        border-bottom: 1px solid #e4ebeb;
+    }
+}
