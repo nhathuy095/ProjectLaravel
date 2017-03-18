@@ -147,14 +147,12 @@ Route::get('/chi-tiet/chi-tiet', function (){
 });
 
 //
-Route::get('/tin-tuc', function (){
-    return view('index')
-        ->with('page', 35);
-});
-Route::get('/tin-tuc/them', function (){
-    return view('index')
-        ->with('page', 36);
-});
+Route::get('/tin-tuc', 'TinTucController@getListNews');
+
+Route::get('/tin-tuc/them', 'TinTucController@showAddListNews');
+
+Route::post('/tin-tuc/them', 'TinTucController@addPostListNews');
+
 Route::get('/tin-tuc/chinh-sua', function (){
     return view('index')
         ->with('page', 37);
