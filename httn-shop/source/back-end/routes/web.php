@@ -1,5 +1,8 @@
 <?php
-
+Route::get('/', function (){
+    return view('index')
+        ->with('page', 43);
+});
 Route::get('/bang-dieu-khien', function (){
     return view('index')
         ->with('page', 1);
@@ -8,10 +11,7 @@ Route::get('/bieu-do', function (){
     return view('index')
         ->with('page', 2);
 });
-Route::get('/don-hang', function (){
-    return view('index')
-        ->with('page', 3);
-});
+Route::get('/don-hang', 'OrderController@getListOrderOfTransaction');
 Route::get('/giao-dich', function (){
     return view('index')
         ->with('page', 4);
@@ -161,6 +161,8 @@ Route::get('/tin-tuc/chi-tiet', function (){
     return view('index')
         ->with('page', 38);
 });
+Route::get('/tin-tuc/xoa/{id}', 'TinTucController@deleteNews');
+Route::get('/tin-tuc/hien-thi', 'TinTucController@showIsActive');
 
 Route::get('/trang', function (){
     return view('index')

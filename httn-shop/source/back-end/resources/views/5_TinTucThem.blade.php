@@ -68,7 +68,7 @@
                                     <div class="input-group">
                                         <span>                      
                                         </span>
-                                         <textarea name="content" rows="4" cols="100"></textarea>
+                                         <textarea name="description" rows="4" cols="100"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-2">
@@ -101,7 +101,7 @@
 											@foreach($list_catalog as $item)
 											<option value="{{ $item->idCatalog }}">{{ $item->nameCatalog 	 }}</option>
 											@endforeach
-										</select>		
+										</select>
 										@endif
                                     </div>
                                 </div>
