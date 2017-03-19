@@ -10,52 +10,31 @@
     <thead>
     <tr>
         <th><input type="checkbox"></th>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Gender</th>
-        <th>Height</th>
-        <th>Province</th>
-        <th>Sport</th>
+        <th>Mã số</th>
+        <th>Sản phẩm</th>
+        <th>Giá</th>
+        <th>Số lượng</th>
+        <th>Đơn hàng</th>
+        <th>Giao dịch</th>
+        <th>Ngày tạo</th>
         <th>Hành động</th>
     </tr>
     </thead>
     <tbody>
+    @foreach($list_order as $item)
     <tr>
         <td data-th="Name"><span class="bt-content"><input type="checkbox"></span></td>
-        <td data-th="Name"><span class="bt-content">Jill Smith</span></td>
-        <td data-th="Age"><span class="bt-content">25</span></td>
-        <td data-th="Gender"><span class="bt-content">Female</span></td>
-        <td data-th="Height"><span class="bt-content">5'4</span></td>
-        <td data-th="Province"><span class="bt-content">British Columbia</span></td>
+        <td data-th="Name"><span class="bt-content">{{ $item->id }}</span></td>
+        <td data-th="Age"><span class="bt-content"></span></td>
+        <td data-th="Gender"><span class="bt-content">{{ $item->amount }}</span></td>
+        <td data-th="Height"><span class="bt-content">1</span></td>
+        <td data-th="Province"><span class="bt-content"></span></td>
         <td data-th="Sport"><span class="bt-content">Volleyball</span></td>
         <td data-th="Sport">
             <span class="bt-content"></span>
         </td>
     </tr>
-    <tr>
-        <td data-th="Name"><span class="bt-content"><input type="checkbox"></span></td>
-        <td data-th="Name"><span class="bt-content">Jill Smith</span></td>
-        <td data-th="Age"><span class="bt-content">25</span></td>
-        <td data-th="Gender"><span class="bt-content">Female</span></td>
-        <td data-th="Height"><span class="bt-content">5'4</span></td>
-        <td data-th="Province"><span class="bt-content">British Columbia</span></td>
-        <td data-th="Sport"><span class="bt-content">Volleyball</span></td>
-        <td data-th="Sport">
-            <span class="bt-content"></span>
-        </td>
-    </tr>
-    <tr>
-        <td data-th="Name"><span class="bt-content"><input type="checkbox"></span></td>
-        <td data-th="Name"><span class="bt-content">Jill Smith</span></td>
-        <td data-th="Age"><span class="bt-content">25</span></td>
-        <td data-th="Gender"><span class="bt-content">Female</span></td>
-        <td data-th="Height"><span class="bt-content">5'4</span></td>
-        <td data-th="Province"><span class="bt-content">British Columbia</span></td>
-        <td data-th="Sport"><span class="bt-content">Volleyball</span></td>
-        <td data-th="Sport">
-            <span class="bt-content"></span>
-        </td>
-    </tr>
+    @endforeach
     </tbody>
 </table>
 <div class="col-md-8"></div>
