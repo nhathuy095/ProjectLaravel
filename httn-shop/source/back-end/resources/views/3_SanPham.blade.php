@@ -28,7 +28,9 @@
         <td data-th="Age">
             <b>Tivi SamSung</b>
             <div class="clearfix"></div>
-            <img height="60" src="{{url("/")}}/resources/assets/images/product7.jpg" alt="">
+            <a href="{{url("/")}}/resources/assets/images/product7.jpg" data-lightbox="image-1">
+                <img height="60" src="{{url("/")}}/resources/assets/images/product7.jpg" alt="">
+            </a>
             <div class="clearfix"></div>
             <div>
                 Đã bán: <b>2</b> | Đã xem: <b>18</b> | Yêu thích: <b>2</b>

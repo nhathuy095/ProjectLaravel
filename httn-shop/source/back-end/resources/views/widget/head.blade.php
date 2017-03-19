@@ -15,6 +15,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <!-- font-awesome icons -->
 <link rel="stylesheet" href="{{url("/")}}/resources/assets/css/font.css" type="text/css"/>
+<link rel="stylesheet" href="{{url("/")}}/resources/assets/javascript/lightbox2-master/dist/css/lightbox.css">
 {{--<link href="{{url("/")}}/resources/assets/css/font-awesome.css" rel="stylesheet">--}}
 <!-- //font-awesome icons -->
 <script src="{{url("/")}}/resources/assets/js/jquery2.0.3.min.js"></script>
@@ -61,6 +62,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" type="text/css" href="{{url("/")}}/resources/assets/css/table-style.css" />
 <link rel="stylesheet" type="text/css" href="{{url("/")}}/resources/assets/css/basictable.css" />
 <script type="text/javascript" src="{{url("/")}}/resources/assets/js/jquery.basictable.min.js"></script>
+<script type="text/javascript" src="{{url("/")}}/resources/assets/javascript/lightbox2-master/dist/js/lightbox.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#table').basictable();
