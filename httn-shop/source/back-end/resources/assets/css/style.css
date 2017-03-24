@@ -3417,6 +3417,7 @@ button.note-color-btn {
 }
 .help-block {
     margin-top: 10px;
+	color: red;
 }
 .forms button.btn.btn-default {
     background-color: #fcb216;

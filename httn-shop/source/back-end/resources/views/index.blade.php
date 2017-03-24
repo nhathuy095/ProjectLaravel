@@ -15,6 +15,18 @@
             @include("4_DanhMuc")
         @elseif($page == 6)
             @include("3_SanPhamThem")
+		@elseif($page == 35)
+            @include("5_TinTuc")
+		@elseif($page == 36)
+            @include("5_TinTucThem")
+		@elseif($page == 37)
+            @include("5_TinTucChinhSua")
+		@elseif($page == 29)
+            @include("8_HoTro")
+		@elseif($page == 30)
+            @include("8_HoTroThem")
+		@elseif($page == 31)
+            @include("8_HoTroChinhSua")
         @endif
     @endif
 
